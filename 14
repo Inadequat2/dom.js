@@ -1,0 +1,39 @@
+let elem1 = document.querySelector('#elem1')
+let elem2 = document.querySelector('#elem2')
+let elem3 = document.querySelector('#elem3')
+elem1.addEventListener('click',func1)
+elem2.addEventListener('click',func2)
+elem3.addEventListener('click',func3)
+function func1(){
+    elem1.textContent = elem1.textContent ** 2;
+  
+}
+function func2(){
+   elem2.textContent = elem2.textContent ** 2;
+ 
+}
+function func3(){
+   elem3.textContent = elem3.textContent ** 2;
+ 
+}
+
+html
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="elem1">25</p>
+    <p id="elem2">5</p>
+    <p id="elem3">9</p>
+    
+
+    
+    <script src="14/14.js"></script>
+</body>
+</html>
