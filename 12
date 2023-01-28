@@ -1,0 +1,25 @@
+let g = document.querySelector("#g")
+let y = document.querySelector("#y")
+g.addEventListener("mouseover", func)
+   function func(){
+      g.textContent = g.textContent + "("+g.href+")"
+      y.textContent = y.textContent + "("+y.href+")"
+}
+
+html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <a id="g" href="http://google.com">гугл</a>
+    <a id="y" href="http://youtube.com">ютуб</a>
+
+    
+    <script src="12/12.js"></script>
+</body>
+</html>
