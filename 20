@@ -1,0 +1,31 @@
+let elem = document.querySelector("#elem")
+let button = document.querySelector("#button")
+button.addEventListener("click",func)
+function func(){
+  let a = ""
+  let b = "qwertyuiop[]asdfghjkl;'zxcvbnm,./1234567890+-*/!@#$%^&*()_+|№;%:?*()_+"
+  for(let i = 0; i<8; i++){
+    a += b.charAt(Math.floor(Math.random() * b.length))
+  }
+  elem.value = a
+}
+
+html
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="elem">
+    <input type="button" value="" id="button">
+
+    
+    <script src="20/20.js"></script>
+</body>
+</html>
+
