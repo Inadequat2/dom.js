@@ -1,0 +1,40 @@
+let elem1 = document.querySelector("#elem1")
+let button = document.querySelector ("#button")
+button.addEventListener("click",func)
+function func(){
+   let b = elem1.value
+   let arr1 = []
+   arr1.push(b)
+   arr1 = b.split("")
+   let arr2 = []
+   arr2.push(b)
+   arr2 = b.split("")
+   arr2 = arr2.reverse()
+   if(arr1[0] == arr2[0]){
+      elem1.value = 'yes'
+   }
+   else{
+      elem1.value = 'no'
+   }
+console.log(arr1,arr2)
+}
+
+html
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <input id="elem1" type="text">
+    <input id="button" type="button" value="">
+    
+    <script src="9/9.js"></script>
+</body>
+</html>
