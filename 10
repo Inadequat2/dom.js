@@ -1,0 +1,35 @@
+let elem1 = document.querySelector("#elem1")
+elem1.addEventListener("blur",func)
+function func(){
+   let b = elem1.value
+   let arr = []
+   arr.push(b)
+   arr = b.split("")
+   for(let i = 0; i<arr.length;i++){
+   if(3 == arr[i]){
+      elem1.value = 'yes'
+   }
+   else{
+      elem1.value = 'no'
+   }
+}
+console.log(arr)
+}
+
+html
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <input id="elem1" type="text">
+    
+    <script src="10/10.js"></script>
+</body>
+</html>
