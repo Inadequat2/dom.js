@@ -1,0 +1,30 @@
+
+let elem = document.querySelector("#elem")
+let p = document.querySelector("#p")
+let button = document.querySelector("#button")
+button.addEventListener("click",func)
+function func(){
+  p.textContent = 5/9 * (elem.value - 32)
+}
+
+
+html
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="elem">
+    <p id="p"></p>
+    <input type="button" value="" id="button">
+
+    
+    <script src="22/22.js"></script>
+</body>
+</html>
+
