@@ -1,17 +1,13 @@
-let elem1 = document.querySelector("#elem1")
-let elem2 = document.querySelector("#elem2")
-let button1 = document.querySelector("#button1")
-let button2 = document.querySelector("#button2")
-button1.addEventListener("click", func1)
-button2.addEventListener("click", func2)
-function func1(){
-   elem1.value++
-}
-function func2(){
-   let a = elem2.value
-   if(a > 0){
-      elem2.value--
-   }
+let elem = document.querySelector("#elem")
+elem.addEventListener("blur", func)
+function func(){
+   let a = elem.value
+   let b = a.split(".")
+   let date = new Date(b[2], b[1]-1, b[0]);
+   let day = date.getDay();
+   let days = ['воскресение','понедельник','вторник','среда','четверг','пятница','суббота']
+   elem.value = (days[day])
+
 }
 
 html
@@ -25,12 +21,12 @@ html
     <title>Document</title>
 </head>
 <body>
+ <input type="text" id="elem">
 
-    <input type="text" id="elem1">
-    <input type="text" id="elem2">
-
-    <input type="button" id="button1">
-    <input type="button" id="button2">
+    
+    <script src="15/15.js"></script>
+</body>
+</html>
     
     
     <script src="16/16.js"></script>
