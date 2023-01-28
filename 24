@@ -1,0 +1,51 @@
+let elem1 = document.querySelector("#elem1")
+let elem2 = document.querySelector("#elem2")
+let elem3 = document.querySelector("#elem3")
+let p = document.querySelector("#p")
+let button = document.querySelector("#button")
+button.addEventListener("click",func)
+function func(){
+    let a = elem1.value
+    let b = elem2.value
+    let c = elem3.value
+
+    let x = b*b-4*a*c
+    if (x<0){
+        x1 = "нет корней"
+        x2 = "нет корней"
+    }
+    else if (x===0){
+        x1=-b/(2*a)
+        x2=x1
+    }
+    else {
+        x1=(-b+Math.sqrt(x))/(2*a)
+        x2=(-b+Math.sqrt(x))/(2*a)
+
+    }
+    p.textContent = x1+" "+x2
+}
+
+html
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+<input type="text" name="" id="elem1">
+<input type="text" name="" id="elem2">
+<input type="text" name="" id="elem3">
+
+<p id="p"></p>
+
+<input type="button" value="" id="button">
+    
+    <script src="24/24.js"></script>
+</body>
+</html>
