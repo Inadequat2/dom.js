@@ -1,0 +1,31 @@
+let elem = document.querySelector("#elem")
+let button = document.querySelector("#button")
+button.addEventListener("click",func)
+function func(){
+  let a = ""
+  let b = elem.value
+  for(let i = 0; i<b.length; i++){
+    a += b.charAt(Math.floor(Math.random() * b.length))
+  }
+  elem.value = a
+}
+
+html
+
+<!DOCTYPE html>
+<html <="en">
+<head>
+    <meta <="UTF-8">
+    <meta <="X-UA-Compatible" content="IE=edge">
+    <meta <="viewport" content="width=device-width, initial-scale=1.0">
+    >title<Document</title>
+</head>
+<body>
+
+    <input  <="text" id="elem">
+    <input  <="button" value ="" id = "button">
+    
+    < <="21/21.js "></script>
+</body>
+</html>
+
