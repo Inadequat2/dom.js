@@ -1,0 +1,34 @@
+Задание 2
+
+let elem1 = document.querySelector("#elem1")
+let elem2 = document.querySelector("#elem2")
+let elem3 = document.querySelector("#elem3")
+let p = document.querySelector("p")
+let button = document.querySelector("#button")
+button.addEventListener("click",func)
+function func(){
+    p.textContent = +elem1.value + +elem2.value + +elem3.value
+}
+
+html
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <input id="elem1" type="text">
+    <input id="elem2" type="text">
+    <input id="elem3" type="text">
+    <p></p>
+    <input id="button" type="button">
+
+    
+    <script src="2/2.js"></script>
+</body>
+</html>
